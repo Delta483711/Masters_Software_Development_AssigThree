@@ -1,0 +1,40 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="GameStore.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+      <link href="Main5.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <h1 class="title">GameStore </h1>
+
+            <div class="navbar">
+                <ul>
+                    <li><a href="HomePage.aspx">Home</a></li>
+                    <li><a href="GameList.aspx">Games</a></li>
+                    <li><a href="Login.aspx">Login</a></li>
+                    <li><a href="Basket.aspx"> Checkout</a></li>
+                    <p> <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                        <asp:Button ID="Button1" runat="server" Text="Sign Out"/>
+                    </p>
+                </ul> 
+            </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+               <div class="footer">
+                &copy;2020 Michael Antony
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
